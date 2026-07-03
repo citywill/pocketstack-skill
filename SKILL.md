@@ -3,6 +3,7 @@ name: pocketstack
 description: |
   PocketStack 全栈开发框架。基于 React + shadcn/ui + PocketBase，采用模块化架构。
   当用户需要以下操作时使用此 skill：
+  (0) 初始化项目开发环境
   (1) 创建新模块（module）、页面或组件
   (2) 配置路由、菜单或权限
   (3) 操作 PocketBase 后端（collection 创建、数据 CRUD）
