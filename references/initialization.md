@@ -5,9 +5,11 @@ PocketStack 项目的安装和启动流程。
 ## 1. 克隆项目
 
 ```bash
-git clone https://github.com/citywill/pocket-stack
-cd pocket-stack
+git clone https://github.com/citywill/pocket-stack <项目目录名>
+cd <项目目录名>
 ```
+
+> 项目目录名由用户指定，若用户未提供则默认为 `pocket-stack`。
 
 ## 2. 下载 PocketBase
 
