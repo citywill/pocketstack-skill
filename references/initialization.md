@@ -11,6 +11,12 @@ cd <项目目录名>
 
 > 项目目录名由用户指定，若用户未提供则默认为 `pocket-stack`。
 
+## 2. 创建环境变量配置文件
+
+```bash
+cp .env.example .env
+```
+
 ## 2. 下载 PocketBase
 
 将 PocketBase 可执行文件下载到项目根目录：
