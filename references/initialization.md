@@ -17,7 +17,7 @@ cd <项目目录名>
 cp .env.example .env
 ```
 
-## 2. 下载 PocketBase
+## 3. 下载 PocketBase
 
 将 PocketBase 可执行文件下载到项目根目录：
 
@@ -27,7 +27,7 @@ cp .env.example .env
 
 将下载的文件放置在项目根目录 `.pocketbase/` 下。
 
-## 3. 安装依赖
+## 4. 安装依赖
 
 ```bash
 npm install
@@ -35,7 +35,7 @@ npm install
 pnpm install
 ```
 
-## 4. 启动开发
+## 5. 启动开发环境
 
 ```bash
 npm run dev
