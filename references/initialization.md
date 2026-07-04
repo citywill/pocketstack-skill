@@ -44,3 +44,15 @@ pnpm dev
 ```
 
 该命令会同时启动 PocketBase 后端和 Vite 前端开发服务器。
+
+## 6. 初始化 PocketBase 超级管理员
+
+使用 cli 定义 pocketbase 的 superuser ：
+- email：`admin@example.com`
+- password：`admin12345`
+
+例如：
+
+```bash
+.pocketbase/pocketbase superuser upsert admin@example.com admin12345
+```
