@@ -2,7 +2,7 @@
 
 ## 简介
 
-本 Skill 为 Agent 提供完整的 [PocketStack](https://github.com/citywill/pocket-stack) 开发参考，涵盖模块创建、后端操作、前端风格、路由菜单配置和测试流程。
+本 Skill 为 Agent 提供完整的 [PocketStack](https://github.com/citywill/pocket-stack) 开发参考，涵盖项目初始化、模块创建、后端操作、前端风格、路由菜单配置和测试流程。
 
 PocketStack 是基于 **React + PocketBase** 的 AI 友好的全栈模块化开发框架。
 
