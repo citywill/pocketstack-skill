@@ -6,7 +6,9 @@
 src/modules/{module}/
 ├── components/           # 模块专用组件
 │   └── XxxDrawer.tsx     # 抽屉、对话框等组件
-├── curd/                 # CRUD 子模块（可选）
+├── migrations/           # PocketBase collection 迁移文件
+│   └── {module}.json
+├── {subModule}/          # 子模块（可选）
 │   ├── components/
 │   │   ├── XxxFormDrawer.tsx
 │   │   └── XxxDetailDrawer.tsx
@@ -14,13 +16,12 @@ src/modules/{module}/
 │   │   └── {module}_xxx.json   # PocketBase collection schema
 │   ├── Index.tsx
 │   └── types.ts
-├── migrations/           # PocketBase collection 迁移文件
-│   └── {module}.json
 ├── PageName.tsx          # 页面文件（大驼峰命名）
 ├── menu.ts               # 菜单配置（必须导出 menu）
 ├── routes.tsx            # 路由配置（必须导出 routes）
 ├── types.ts              # 类型定义
-└── package.json          # 模块描述
+├── package.json          # 模块描述
+└── README.md             # 模块说明文档
 ```
 
 ## 文件命名
@@ -36,6 +37,24 @@ src/modules/{module}/
 例如：
 - 模块 `craftor` 的 `CollectionList` 页面 → `/craftor/collection-list`
 - 模块 `examples` 的 `Dashboard` 页面 → `/examples/dashboard`
+
+## 模块 README.md
+
+每个模块建议在根目录放置一个 `README.md` 文件，用于说明模块的功能、结构和用途，便于 AI Agent 和开发者快速理解模块。
+
+```markdown
+# {模块名称}
+
+## 功能概述
+简要描述模块的核心功能和业务场景。
+
+## 页面列表
+- /{module}/page1 - 页面1 说明
+- /{module}/page2 - 页面2 说明
+
+## 数据模型
+- {module}_xxx - collection 说明
+```
 
 ## 参考示例
 
