@@ -2,22 +2,17 @@
 
 PocketStack 项目的安装和启动流程。
 
-## 1. 克隆项目
+## 1. 克隆项目并初始化环境变量配置文件
 
 ```bash
 git clone https://github.com/citywill/pocket-stack <项目目录名>
 cd <项目目录名>
-```
-
-> 项目目录名由用户指定，若用户未提供则默认为 `pocket-stack`。
-
-## 2. 创建环境变量配置文件
-
-```bash
 cp .env.example .env
 ```
 
-## 3. 下载 PocketBase
+项目目录名由用户指定，若用户未提供则提示用户输入项目目录名。默认项为 `pocket-stack`。
+
+## 2. 下载 PocketBase
 
 将 PocketBase 可执行文件下载到项目根目录：
 
@@ -27,7 +22,7 @@ cp .env.example .env
 
 将下载的文件放置在项目根目录 `.pocketbase/` 下。
 
-## 4. 安装依赖
+## 3. 安装依赖
 
 ```bash
 npm install
@@ -35,7 +30,7 @@ npm install
 pnpm install
 ```
 
-## 5. 启动开发环境
+## 4. 启动开发环境
 
 ```bash
 npm run dev
@@ -45,7 +40,7 @@ pnpm dev
 
 该命令会同时启动 PocketBase 后端和 Vite 前端开发服务器。
 
-## 6. 初始化 PocketBase 超级管理员
+## 5. 初始化 PocketBase 超级管理员
 
 使用 cli 定义 pocketbase 的 superuser ：
 - email：`admin@example.com`
