@@ -14,11 +14,13 @@ description: |
 
 # PocketStack 开发
 
-PocketStack 是基于 PocketBase 后端和 React 前端的全栈模块化开发框架。
+PocketStack 是基于 PocketBase 后端和 React 前端的全栈模块化开发框架。本skill主要用于：初始化 PocketStack 项目开发环境；PocketStack 模块开发。
 
 ## 工作流程
 
-开发一个功能模块遵循以下步骤：
+**初始化项目开发环境** ：克隆项目、安装依赖、配置环境、启动项目。
+
+**开发一个功能模块** 遵循以下步骤：
 
 1. **创建模块** - 按照模块结构创建目录和文件
 2. **后端** - 通过 PocketBase MCP 创建 collection
