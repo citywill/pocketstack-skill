@@ -45,12 +45,12 @@ src/modules/{module}/
 ```markdown
 # {模块名称}
 
-## 功能概述
+## 模块概述
 简要描述模块的核心功能和业务场景。
 
-## 页面列表
-- /{module}/page1 - 页面1 说明
-- /{module}/page2 - 页面2 说明
+## 功能特性
+- 特性1：说明
+- 特性2：说明
 
 ## 数据模型
 - {module}_xxx - collection 说明
