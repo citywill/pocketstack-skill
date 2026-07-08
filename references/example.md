@@ -14,5 +14,6 @@
 - 加载中：`src/modules/examples/Loading.tsx`
 - CURD：`src/modules/examples/Curd/`
 - Markdown 编辑器：`src/modules/examples/MarkdownEditor.tsx`
+- Markdown 渲染：`src/modules/examples/MarkdownPreview.tsx`
 - 落地页（游客访问）：`src/modules/examples/LandingPage.tsx`
 - 博客详情（游客访问）：`src/modules/examples/BlogDetail.tsx`
