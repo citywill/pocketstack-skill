@@ -64,6 +64,7 @@ interface MenuItem {
   title: string;           // 菜单标题
   path?: string;           // 路由路径
   icon: any;               // heroicons 图标组件
+  order?: number;          // 排序权重，越小越靠前，默认 999
   adminOnly?: boolean;     // 仅超级管理员可见
   userOnly?: boolean;      // 仅普通用户可见
   external?: boolean;      // 外部链接
@@ -72,6 +73,7 @@ interface MenuItem {
   children?: {             // 子菜单
     title: string;
     path: string;
+    order?: number;        // 子菜单排序权重
     adminOnly?: boolean;
     userOnly?: boolean;
     external?: boolean;
@@ -90,16 +92,18 @@ export const menu = {
   title: '仪表盘',
   icon: ChartBarIcon,
   path: '/module/dashboard',
+  order: 1,                // 排在最前面
 };
 
 // 带子菜单
 export const menu = {
   title: '模块名称',
   icon: ChartBarIcon,
+  order: 10,
   activePath: '^/module/',
   children: [
-    { title: '列表', path: '/module/list' },
-    { title: '管理', path: '/module/admin', adminOnly: true },
+    { title: '列表', path: '/module/list', order: 1 },
+    { title: '管理', path: '/module/admin', adminOnly: true, order: 2 },
     { title: '外部链接', path: 'https://example.com', external: true },
     { title: '隐藏项', path: '/module/hidden', show: false },
   ],
@@ -107,7 +111,7 @@ export const menu = {
 
 // 导出菜单数组
 export const menu = [
-  { title: '页面A', icon: IconA, path: '/module/a' },
-  { title: '页面B', icon: IconB, path: '/module/b' },
+  { title: '页面A', icon: IconA, path: '/module/a', order: 1 },
+  { title: '页面B', icon: IconB, path: '/module/b', order: 2 },
 ];
 ```
